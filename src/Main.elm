@@ -64,13 +64,13 @@ view model =
         , style "padding" "24px"
         ]
         [ div
-            [ style "color" "green"
+            [ style "color" "limegreen"
             ]
             [ text "Example: ++++++++[>++++[>++>+++>+++>+<<<<-]>+>+>->>+[<]<-]>>.>---.+++++++..+++.>>.<-.<.+++.------.--------.>>+.>++."
             ]
         , resultList model.results
         , div
-            [ style "color" "green"
+            [ style "color" "limegreen"
             ]
             [ text "Input:"
             ]
@@ -80,9 +80,9 @@ view model =
             , style "resize" "none"
             , style "margin-bottom" "100%"
             , style "background" "transparent"
+            , style "color" "limegreen"
             , style "border" "none"
             , style "border-radius" "0"
-            , style "color" "green"
             , style "outline" "none"
             , autofocus True
             , value model.code
@@ -96,7 +96,7 @@ view model =
 resultList : List String -> Html msg
 resultList list =
     ul
-        [ style "color" "green"
+        [ style "color" "limegreen"
         , style "padding" "0px"
         , style "white-space" "pre"
         ]
